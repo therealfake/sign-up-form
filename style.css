@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    /* font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; */
+    font-size: large;
+    margin: 0px;
+}
+
+body {
+    width:100vh;
+    height: 100vh;
+    display: flex;
+}
+
+#sidebar {
+    position: relative;
+    flex-grow: 1;
+    width: 30%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#img-credits {
+    position: absolute;
+}
+
+#main-content {
+    width: 70vw;
+    flex-grow: 2;
+    background-color: rgba(228,229,230,255);
+}
+
+#main-content #description {
+    margin: 100px 50px 60px 50px;
+}
+
+#main-content #user-form > div {
+    padding: 15px 50px 20px 50px;
+    background-color: rgba(255,255,255,255);
+}
+
+#main-content #create-btn,
+#main-content #log-in {
+    margin: 55px 0px 0px 50px;
+}
