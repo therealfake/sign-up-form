@@ -7,36 +7,65 @@
 }
 
 body {
-    width:100vh;
+    width: 100vw;
     height: 100vh;
     display: flex;
-    font-size: large;
+    flex-wrap: nowrap;
+    font-size: 1.5rem;
+    overflow: hidden;
 }
 
 #sidebar {
     position: relative;
     flex-grow: 1;
-    width: 30%;
+    text-align: center;
+}
+
+#sidebar > img {
+    height: 100%;
+}
+
+#logo-sect {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: grey;
     font-family: 'Permanent Marker', cursive;
+    bottom: 100px;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-sect > img {
+    height: 100px;
 }
 
 #img-credits {
     position: absolute;
+    color: rgb(255, 255, 255);
+    bottom: 5px;
+    margin: auto;
+    font-size: 1rem;
+    left: 25%;
+}
+
+#img-credits a {
+    color: rgb(255, 255, 255);
 }
 
 #main-content {
-    width: 70vw;
     flex-grow: 2;
-    background-color: rgb(228,229,230);
+    background-color: rgb(228, 229, 230);
 }
 
 #main-content #description {
-    margin: 100px 50px 60px 50px;
+    margin: 60px 50px 60px 50px;
 }
 
-#main-content #user-form > div {
+#main-content #user-form>div {
     padding: 35px 50px 35px 50px;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 form {
@@ -45,37 +74,42 @@ form {
     flex-wrap: wrap;
     font-family: 'Open Sans', sans-serif;
     font-size: small;
-}  
-
-form > div {
-    margin: 0px 30px 15px 0px;
 }
 
-label, input {
+form>div {
+    margin: 0 6rem 1rem 0;
+}
+
+label,
+input {
     display: block;
-    margin-bottom: 5px;
 }
 
 input {
-    width: 250px;
+    width: 300px;
     height: 30px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-#create-btn, #log-in {
-    margin: 55px 0px 0px 50px;
+#create-btn,
+#log-in {
+    margin: 35px 0px 0px 50px;
 }
 
 #create-btn {
     padding: 15px 50px;
     border: none;
     border-radius: 15px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color: rgb(128,128,128);
-    color: rgb(255,255,255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+}
+
+#log-in {
+    font-size: 0.9rem;
 }
 
 #log-in a {
-    color: rgb(128,128,128);
+    color: rgb(128, 128, 128);
 }
