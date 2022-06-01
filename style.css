@@ -4,6 +4,7 @@
 * {
     /* font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; */
     margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -15,47 +16,41 @@ body {
     overflow: hidden;
 }
 
-#sidebar {
-    position: relative;
-    flex-grow: 1;
-    text-align: center;
-}
+/* Sidebard section */
 
-#sidebar > img {
-    height: 100%;
+#sidebar {
+    width: 70vw; 
+    position: relative;
+    text-align: center;
+    background-image: url(./images/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #logo-sect {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
     position: absolute;
+    bottom: 100px;
     width: 100%;
     background-color: grey;
     font-family: 'Permanent Marker', cursive;
-    bottom: 100px;
-    font-size: 3rem;
-    justify-content: center;
-    align-items: center;
+    font-size: 2.3rem;
+    
 }
 
 #logo-sect > img {
     height: 100px;
 }
 
-#img-credits {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    bottom: 5px;
-    margin: auto;
-    font-size: 1rem;
-    left: 25%;
-}
-
-#img-credits a {
-    color: rgb(255, 255, 255);
+#logo-sect > h3 {
+    color: rgb(241, 240, 240);
 }
 
 #main-content {
-    flex-grow: 2;
     background-color: rgb(228, 229, 230);
 }
 
@@ -65,7 +60,7 @@ body {
 
 #main-content #user-form>div {
     padding: 35px 50px 35px 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 240, 240);
 }
 
 form {
