@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+:root {
+    --grey1: rgb(128, 128, 128);
+}
 
 * {
     /* font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; */
@@ -19,7 +22,7 @@ body {
 /* Sidebard section */
 
 #sidebar {
-    width: 70vw; 
+    width: 35vw; 
     position: relative;
     text-align: center;
     background-image: url(./images/background-image.jpg);
@@ -36,7 +39,7 @@ body {
     position: absolute;
     bottom: 100px;
     width: 100%;
-    background-color: grey;
+    background-color: var(--grey1);
     font-family: 'Permanent Marker', cursive;
     font-size: 2.3rem;
     
@@ -50,19 +53,24 @@ body {
     color: rgb(241, 240, 240);
 }
 
+/* Main content section */
+
 #main-content {
+    width: 65vw;
     background-color: rgb(228, 229, 230);
 }
 
 #main-content #description {
-    margin: 60px 50px 60px 50px;
+    padding: 60px 180px 60px 60px;
 }
 
 #main-content #user-form>div {
-    padding: 35px 50px 35px 50px;
+    padding: 35px 50px 35px 60px;
     background-color: rgb(241, 240, 240);
+    box-shadow: 0 10px 20px -5px var(--grey1);
 }
 
+/* User Sign Up Form */
 form {
     margin-top: 15px;
     display: flex;
@@ -75,36 +83,40 @@ form>div {
     margin: 0 6rem 1rem 0;
 }
 
-label,
-input {
-    display: block;
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 input {
-    width: 300px;
-    height: 30px;
+    height: 1.4rem;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-#create-btn,
-#log-in {
-    margin: 35px 0px 0px 50px;
-}
-
-#create-btn {
-    padding: 15px 50px;
+button {
+    position: absolute;
+    bottom: 25vh;
+    padding: 15px 60px;
     border: none;
     border-radius: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    background-color: rgb(128, 128, 128);
+    background-color: var(--grey1);
     color: rgb(255, 255, 255);
 }
 
+button:hover {
+    background-color: white;
+    color: var(--grey1);
+}
 #log-in {
+    position: absolute;
+    bottom: 20vh;
+    margin: 35px 0px 0px 60px;
     font-size: 0.9rem;
 }
 
 #log-in a {
-    color: rgb(128, 128, 128);
+    color: var(--grey1);
 }
