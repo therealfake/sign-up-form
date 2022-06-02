@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
 </head>
 <body>
     <div id="sidebar">
@@ -21,9 +22,8 @@
             Your <i>future self</i> will thank you later.</b>
         </div>
         <div id="user-form">
-            <div>
                 <b>Let's start!</b>
-                <form action="#" method="#">
+                <form action="#" method="#" id = "sign-up">
                     <div>
                         <label for="firstname">FIRST NAME</label>
                         <input type="text" id="firstname" name="firstname" required>
@@ -42,15 +42,15 @@
                     </div>
                     <div>
                         <label for ="pass">PASSWORD</label>
-                        <input type="password" id="pass" name="pass" required>
+                        <input type="password" id="pass1" name="pass1" required>
+                        <span id="pass-error"></span>
                     </div>
                     <div>
                         <label for ="conf-pass">CONFIRM PASSWORD</label>
-                        <input type="password" id="conf-pass" name="conf-pass" required>
+                        <input type="password" id="pass2" name="pass2" required>
                     </div>
                     <button type="submit">Create Account</button>
                 </form>
-            </div>
         </div>
         <div id="log-in">Already have an account? <a href="">Log in</a></div>   
     </div>

@@ -64,10 +64,11 @@ body {
     padding: 60px 180px 60px 60px;
 }
 
-#main-content #user-form>div {
+#main-content #user-form {
     padding: 35px 50px 35px 60px;
     background-color: rgb(241, 240, 240);
     box-shadow: 0 10px 20px -5px var(--grey1);
+    height: 25vh;
 }
 
 /* User Sign Up Form */
@@ -80,7 +81,7 @@ form {
 }
 
 form>div {
-    margin: 0 6rem 1rem 0;
+    margin: 0 10vw 1rem 0;
 }
 
 form div {
@@ -95,9 +96,12 @@ input {
     border-radius: 5px;
 }
 
+#pass-error {
+    color: red;
+}
 button {
-    position: absolute;
-    bottom: 25vh;
+    position: relative;
+    top: 5rem;
     padding: 15px 60px;
     border: none;
     border-radius: 15px;
@@ -111,8 +115,8 @@ button:hover {
     color: var(--grey1);
 }
 #log-in {
-    position: absolute;
-    bottom: 20vh;
+    position: relative;
+    top: 5rem;
     margin: 35px 0px 0px 60px;
     font-size: 0.9rem;
 }
